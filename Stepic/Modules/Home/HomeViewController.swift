@@ -52,6 +52,19 @@ final class HomeViewController: BaseExploreViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.homeInteractor?.loadContent(request: .init())
+
+        // TODO: remove before release
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(
+            barButtonSystemItem: .fastForward,
+            target: self,
+            action: #selector(self.openInAppTest)
+        )
+    }
+
+    @objc
+    private func openInAppTest() {
+        let controller = InAppTestViewController()
+        self.push(module: controller)
     }
 
     override func viewDidAppear(_ animated: Bool) {

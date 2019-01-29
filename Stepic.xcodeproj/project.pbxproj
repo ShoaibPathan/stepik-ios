@@ -1856,6 +1856,7 @@
 		2C35C4F61F4DB8AC002F3BF4 /* step0.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C35C4F21F4DB8A5002F3BF4 /* step0.html */; };
 		2C35C4FB1F4DB8D4002F3BF4 /* step0.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C35C4F71F4DB8CC002F3BF4 /* step0.html */; };
 		2C3658D922007C89006AA418 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3658D822007C89006AA418 /* StoreKit.framework */; };
+		2C3658DB22007D84006AA418 /* InAppTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3658DA22007D84006AA418 /* InAppTestViewController.swift */; };
 		2C3A22542121DEF700927BD7 /* AdaptiveCourseSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0107C3210F746B009A53DF /* AdaptiveCourseSelectViewController.swift */; };
 		2C3A22552121DEFD00927BD7 /* AdaptiveCourseSelectPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0107C2210F746B009A53DF /* AdaptiveCourseSelectPresenter.swift */; };
 		2C3A22562121DF2100927BD7 /* AdaptiveCourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0107B4210F743C009A53DF /* AdaptiveCourseTableViewCell.swift */; };
@@ -5697,6 +5698,7 @@
 		2C35C4F81F4DB8CC002F3BF4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = ru; path = Content/3150/ru.lproj/step0.html; sourceTree = "<group>"; };
 		2C35C4FA1F4DB8D0002F3BF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = Content/3150/en.lproj/step0.html; sourceTree = "<group>"; };
 		2C3658D822007C89006AA418 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		2C3658DA22007D84006AA418 /* InAppTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppTestViewController.swift; sourceTree = "<group>"; };
 		2C3DA0031F3C68B700D74968 /* AchievementNotificationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AchievementNotificationView.xib; sourceTree = "<group>"; };
 		2C3E42B42101D05C009D76DF /* KnowledgeGraphLesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeGraphLesson.swift; sourceTree = "<group>"; };
 		2C453397204D46E90061342A /* PinsMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinsMap.swift; sourceTree = "<group>"; };
@@ -8319,6 +8321,7 @@
 				62E98B7A4296E04D057D679A /* SearchResultsLegacy.swift */,
 				24AFD764029A4489583D88DF /* BaseExplore */,
 				D5D9691BD42234A0FDE29D1E /* CourseInfoTabInfo */,
+				2C3658DA22007D84006AA418 /* InAppTestViewController.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -14930,6 +14933,7 @@
 				082B54CF20A9DD3000144817 /* PersonalDeadlinesModeSelectionViewController.swift in Sources */,
 				2C1219901F9655AB00A43E98 /* NotificationsSection.swift in Sources */,
 				0888D0FD1F1E3CFC00A16863 /* CodeInputAccessoryView.swift in Sources */,
+				2C3658DB22007D84006AA418 /* InAppTestViewController.swift in Sources */,
 				2CA9D9812010A0CD007AA743 /* ProgressTableViewCell.swift in Sources */,
 				084070801D64847000308FC1 /* SharingHelper.swift in Sources */,
 				2C4436B321356D960084489C /* CourseSubscriber.swift in Sources */,
