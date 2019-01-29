@@ -1855,6 +1855,7 @@
 		2C35C4F11F4DB88E002F3BF4 /* step0.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C35C4ED1F4DB882002F3BF4 /* step0.html */; };
 		2C35C4F61F4DB8AC002F3BF4 /* step0.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C35C4F21F4DB8A5002F3BF4 /* step0.html */; };
 		2C35C4FB1F4DB8D4002F3BF4 /* step0.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C35C4F71F4DB8CC002F3BF4 /* step0.html */; };
+		2C3658D922007C89006AA418 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3658D822007C89006AA418 /* StoreKit.framework */; };
 		2C3A22542121DEF700927BD7 /* AdaptiveCourseSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0107C3210F746B009A53DF /* AdaptiveCourseSelectViewController.swift */; };
 		2C3A22552121DEFD00927BD7 /* AdaptiveCourseSelectPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0107C2210F746B009A53DF /* AdaptiveCourseSelectPresenter.swift */; };
 		2C3A22562121DF2100927BD7 /* AdaptiveCourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0107B4210F743C009A53DF /* AdaptiveCourseTableViewCell.swift */; };
@@ -5695,6 +5696,7 @@
 		2C35C4F51F4DB8A9002F3BF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = Content/3149/en.lproj/step0.html; sourceTree = "<group>"; };
 		2C35C4F81F4DB8CC002F3BF4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = ru; path = Content/3150/ru.lproj/step0.html; sourceTree = "<group>"; };
 		2C35C4FA1F4DB8D0002F3BF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = Content/3150/en.lproj/step0.html; sourceTree = "<group>"; };
+		2C3658D822007C89006AA418 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		2C3DA0031F3C68B700D74968 /* AchievementNotificationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AchievementNotificationView.xib; sourceTree = "<group>"; };
 		2C3E42B42101D05C009D76DF /* KnowledgeGraphLesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeGraphLesson.swift; sourceTree = "<group>"; };
 		2C453397204D46E90061342A /* PinsMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinsMap.swift; sourceTree = "<group>"; };
@@ -6434,6 +6436,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C3658D922007C89006AA418 /* StoreKit.framework in Frameworks */,
 				08E16F251BDBA539004822E1 /* SystemConfiguration.framework in Frameworks */,
 				CFB64395354888F2DACAF25D /* Pods_Stepic.framework in Frameworks */,
 			);
@@ -8436,6 +8439,7 @@
 		1BAD14BA674336E6C1C0716C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2C3658D822007C89006AA418 /* StoreKit.framework */,
 				2C4BBF0B203DC5C9000A4250 /* Plyr */,
 				2CB190781F2A17E800BD9508 /* Charts.framework */,
 				08E542001C6A76E100DEC38E /* MathJax */,
@@ -12143,7 +12147,7 @@
 								enabled = 0;
 							};
 							com.apple.InAppPurchase = {
-								enabled = 0;
+								enabled = 1;
 							};
 							com.apple.Push = {
 								enabled = 1;
