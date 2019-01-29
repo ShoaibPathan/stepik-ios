@@ -57,6 +57,8 @@ final class Course: NSManagedObject, IDFetchable {
         authorsArray = json["authors"].arrayObject as? [Int] ?? []
         timeToComplete = json["time_to_complete"].int
         languageCode = json["language"].stringValue
+        isPaid = json["is_paid"].boolValue
+        priceTier = json["price_tier"].int
 
         if let _ = json["intro_video"].null {
             introVideo = nil
