@@ -1857,6 +1857,7 @@
 		2C35C4FB1F4DB8D4002F3BF4 /* step0.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C35C4F71F4DB8CC002F3BF4 /* step0.html */; };
 		2C3658D922007C89006AA418 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3658D822007C89006AA418 /* StoreKit.framework */; };
 		2C3658DB22007D84006AA418 /* InAppTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3658DA22007D84006AA418 /* InAppTestViewController.swift */; };
+		2C3658DE2200855D006AA418 /* CoursePayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3658DD2200855D006AA418 /* CoursePayment.swift */; };
 		2C3A22542121DEF700927BD7 /* AdaptiveCourseSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0107C3210F746B009A53DF /* AdaptiveCourseSelectViewController.swift */; };
 		2C3A22552121DEFD00927BD7 /* AdaptiveCourseSelectPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0107C2210F746B009A53DF /* AdaptiveCourseSelectPresenter.swift */; };
 		2C3A22562121DF2100927BD7 /* AdaptiveCourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0107B4210F743C009A53DF /* AdaptiveCourseTableViewCell.swift */; };
@@ -5699,6 +5700,8 @@
 		2C35C4FA1F4DB8D0002F3BF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = Content/3150/en.lproj/step0.html; sourceTree = "<group>"; };
 		2C3658D822007C89006AA418 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		2C3658DA22007D84006AA418 /* InAppTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppTestViewController.swift; sourceTree = "<group>"; };
+		2C3658DC220081F4006AA418 /* Model_paid_courses_v32.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model_paid_courses_v32.xcdatamodel; sourceTree = "<group>"; };
+		2C3658DD2200855D006AA418 /* CoursePayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursePayment.swift; sourceTree = "<group>"; };
 		2C3DA0031F3C68B700D74968 /* AchievementNotificationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AchievementNotificationView.xib; sourceTree = "<group>"; };
 		2C3E42B42101D05C009D76DF /* KnowledgeGraphLesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeGraphLesson.swift; sourceTree = "<group>"; };
 		2C453397204D46E90061342A /* PinsMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinsMap.swift; sourceTree = "<group>"; };
@@ -7483,6 +7486,7 @@
 				62E98708CFECD3F1D0AD4120 /* Achievement.swift */,
 				62E98C688DF80BD29740D967 /* AchievementProgress.swift */,
 				62E98BB94C146AA2D8A9C2FF /* UserCourse.swift */,
+				2C3658DD2200855D006AA418 /* CoursePayment.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -15152,6 +15156,7 @@
 				2C9BD78E1FC43C6B00F89CBE /* NotificationsBadgesManager.swift in Sources */,
 				08F485AA1C580D61000165AA /* MathReply.swift in Sources */,
 				08E43E99214C279700E3CB50 /* PushRouterSourceProtocol.swift in Sources */,
+				2C3658DE2200855D006AA418 /* CoursePayment.swift in Sources */,
 				2C2F0BE72186EEB8007DCA0A /* StreakNotificationsRequestAlertDataSource.swift in Sources */,
 				082B54D520AA290800144817 /* PersonalDeadlinesDefaultsContainer.swift in Sources */,
 				2CB62BDB2019ECB800B5E336 /* OnboardingCardStepViewController.swift in Sources */,
@@ -20761,6 +20766,7 @@
 		08D1EF6E1BB5618700BE84E6 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				2C3658DC220081F4006AA418 /* Model_paid_courses_v32.xcdatamodel */,
 				2C09313321CCFE47002B605D /* Model_course_lesson_fields_v31.xcdatamodel */,
 				2C88C11E21C12C31004BDF21 /* Model_course_readiness_v30.xcdatamodel */,
 				2C8E882B21A2E70F00A27789 /* Model_course_authors_v29.xcdatamodel */,
@@ -20794,7 +20800,7 @@
 				0802AC531C7222B200C4F3E6 /* Model_v2.xcdatamodel */,
 				08D1EF6F1BB5618700BE84E6 /* Model.xcdatamodel */,
 			);
-			currentVersion = 2C09313321CCFE47002B605D /* Model_course_lesson_fields_v31.xcdatamodel */;
+			currentVersion = 2C3658DC220081F4006AA418 /* Model_paid_courses_v32.xcdatamodel */;
 			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

@@ -11,8 +11,40 @@ import StoreKit
 import SnapKit
 
 final class InAppTestViewController: UIViewController {
+    private static var courseID = 51351
+    private lazy var coursesNetworkService = CoursesNetworkService(coursesAPI: CoursesAPI())
+
+    private static var storeProductIdentifiers = [
+        "com.AlexKarpov.Stepic.CourseTier1"
+    ]
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        self.requestStoreProducts()
+    }
+
     override func loadView() {
         self.view = InAppTestView(frame: UIScreen.main.bounds)
+    }
+
+    // MARK: - StoreKit usage
+
+    private func requestStoreProducts() {
+        let request = SKProductsRequest(
+            productIdentifiers: Set<String>(InAppTestViewController.storeProductIdentifiers)
+        )
+        request.delegate = self
+        request.start()
+    }
+}
+
+extension InAppTestViewController: SKProductsRequestDelegate {
+    func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
+        print(response.products.count, response.invalidProductIdentifiers)
+        for product in response.products {
+            print(product)
+        }
     }
 }
 
